@@ -4,30 +4,49 @@ function getComputerChoice() {
  }
 let computerSelection = getComputerChoice()
 
-
 let userSubmit = prompt("Play rock, paper, scissors vs a robot! First to 5 wins!");
    if (userSubmit.toLowerCase() === "rock") {
    userSelection = "rock";
- } else if (userSubmit.toLowercase() === "paper") {
+ } else if (userSubmit.toLowerCase() === "paper") {
    userSelection = "paper";
  } else if (userSubmit.toLowerCase() === "scissors") {
    userSelection = "scissors";
  }
 
  let playerSelection = userSelection;
+ let playerWins = "You win!";
+ let computerWins = "You lose!";
+ let noOneWins = "It\'s a tie!";
 
  function playRound(playerSelection, computerSelection) {
     if (playerSelection === "rock" && computerSelection === "scissors") {
-        return "Rock beats scissors, you win!";
+        return `${playerWins} Rock beats scissors!!`;
     }
     else if (playerSelection === "paper" && computerSelection === "rock") {
-        return "Paper beats rock, you win!!";
+        return `${playerWins} Paper beats rock!!`;
     }
     else if (playerSelection === "scissors" && computerSelection === "paper") {
-        return "Scissors beats paper, you win!!";
+        return `${playerWins} Scissors beats paper!!`;
     }
     else if (playerSelection === computerSelection) {
-        return "It's a tie!!! Try again! :)";
+        return `${noOneWins} Try again. :)`;
     }
-    else return "You lose! Try again! :(";
+    else return  `${computerWins} Try again. :(`;
+    
  }
+let playerScore = 0;
+let computerScore = 0;
+let tieScore = 0;
+
+ function game() {
+  let roundResult = playRound(playerSelection, computerSelection);
+  if (roundResult = playerWins) {
+    playerScore++;
+  } else if (roundResult = computerWins) {
+    computerScore++;
+  } else (roundResult = noOneWins) tieScore++
+   
+ }
+
+ 
+ 
