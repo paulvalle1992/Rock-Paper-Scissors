@@ -6,14 +6,13 @@ let computerSelection = getComputerChoice()
 
 let userSubmit = prompt("Play rock, paper, scissors vs a robot! First to 5 wins!");
    if (userSubmit.toLowerCase() === "rock") {
-   userSelection = "rock";
+   playerSelection = "rock";
  } else if (userSubmit.toLowerCase() === "paper") {
-   userSelection = "paper";
+   playerSelection = "paper";
  } else if (userSubmit.toLowerCase() === "scissors") {
-   userSelection = "scissors";
+   playerSelection = "scissors";
  }
 
- let playerSelection = userSelection;
  let playerWins = "You win!";
  let computerWins = "You lose!";
  let noOneWins = "It\'s a tie!";
