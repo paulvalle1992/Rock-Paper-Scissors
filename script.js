@@ -34,29 +34,12 @@ let userSubmit = prompt("Play rock, paper, scissors vs a robot! First to 5 wins!
     else return  `${computerWins} Try again. :(`;
     
  }
-let playerScore = 0;
-let computerScore = 0;
-let tieScore = 0;
 
  function game() {
+  for (let i = 0; i <= 5; i++) {
   let roundResult = playRound(playerSelection, computerSelection);
-  for (let i = 0; i <= roundResult; i++) {
-    if (roundResult = playerWins) {
-    playerScore++;
-  } else if (roundResult = computerWins) {
-    computerScore++;
-  } else (roundResult = noOneWins) tieScore++
-}
+  }
    
- }
-
- if (playerScore === 5) {
-  alert("You win the first to 5 congratulations!");
- } else if (computerScore === 5) {
-  alert("You lose the first to 5 computers are better than you.")
- } else (tieScore === 5) 
-  alert("Computers and humans are equal. I will take this over a loss to computers congrats.");
- 
 
  
  
