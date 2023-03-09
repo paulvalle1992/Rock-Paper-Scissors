@@ -11,22 +11,30 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container-fluid mt-4">
-        <div class="row mt-4">
+    <div class="container-fluid">
+        <div class="row mt-4 mb-5">
             <div class="col-12 mt-4 d-flex justify-content-center">
                 <h1 class="mt4 text-light">Let's play rock, paper, scissors!</h1>
             </div>
         </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-3"></div>
+            <h3 class="col-2 text-end" id="userScore"> User Score:</h3>
+            <h3 class="col text-end text-bg-dark">0</h3>
+            <h3 class="col-2 text-end">Computer Score:</h3>
+            <h3 class="col text-end text-bg-dark" id="computerScore">0</h3>
+            <div class="col-3"></div>
+        </div>
         <div class="row mt-4">
             <div class="col-3"></div>
             <div class="col-1 mt-4 d-flex justify-content-center">
-                <button class="btn btn-secondary" id="rock">Rock</button>
+                <button class="btn btn-secondary btn-lg" id="rock">Rock</button>
             </div>
             <div class="col-4 mt-4 d-flex justify-content-center">
-                <button class="btn btn-secondary" id="paper">Paper</button>
+                <button class="btn btn-secondary btn-lg" id="paper">Paper</button>
             </div>
             <div class="col-1 mt-4 d-flex justify-content-center">
-                <button class="btn btn-secondary" id="scissors">Scissors</button>
+                <button class="btn btn-secondary btn-lg" id="scissors">Scissors</button>
                 <div class="col-3"></div>
             </div>
         </div>
