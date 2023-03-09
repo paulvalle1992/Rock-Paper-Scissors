@@ -1,3 +1,5 @@
+document.body.style.backgroundColor = "#6a6a6a";
+
 const selectionPool = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
@@ -28,17 +30,17 @@ let computerSelection = getComputerChoice();
     else return  `${computerWins} Try again. :(`;
   }
 
-  function game() { 
-    for (i = 0; i < 5; i++) {
-        let computerSelection = getComputerChoice();
-    let playerSelection = prompt("Play rock, paper, scissors vs a robot! First to 5 wins!").toLowerCase();
-       if (playerSelection === selectionPool[0] || playerSelection === selectionPool[1] || playerSelection === selectionPool[2]) {
-        console.log(playRound(playerSelection, computerSelection));    
-       }
-      else {
-       return alert("Only works if putting rock, paper or scissors.");
-      } 
-     }
-   }
+//   function game() { 
+//     for (i = 0; i < 5; i++) {
+//         let computerSelection = getComputerChoice();
+//     let playerSelection = prompt("Play rock, paper, scissors vs a robot! First to 5 wins!").toLowerCase();
+//        if (playerSelection === selectionPool[0] || playerSelection === selectionPool[1] || playerSelection === selectionPool[2]) {
+//         console.log(playRound(playerSelection, computerSelection));    
+//        }
+//       else {
+//        return alert("Only works if putting rock, paper or scissors.");
+//       } 
+//      }
+//    }
 
-game();
+// game();
