@@ -1,5 +1,4 @@
 document.body.style.backgroundColor = "#6a6a6a";
-
 const selectionPool = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
